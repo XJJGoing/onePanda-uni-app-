@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-field": "/wxcomponents/vant-weapp/field/index",
+    "van-picker": "/wxcomponents/vant-weapp/picker/index",
+    "van-divider": "/wxcomponents/vant-weapp/divider/index",
+    "van-uploader": "/wxcomponents/vant-weapp/uploader/index",
+    "myeditor": "/components/robin-editor/editor"
+  }
+}

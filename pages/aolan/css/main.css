@@ -1,0 +1,9 @@
+.content{
+	font-size: 24upx;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.main{
+	
+}

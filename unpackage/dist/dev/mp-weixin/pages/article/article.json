@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-divider": "/wxcomponents/vant-weapp/divider/index",
+    "van-tag": "/wxcomponents/vant-weapp/tag/index",
+    "van-icon": "/wxcomponents/vant-weapp/icon/index",
+    "component-article-list": "/pages/article/articleList"
+  }
+}

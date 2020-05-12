@@ -1,0 +1,179 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path" : "pages/course/course",
+			"style" : {
+				"usingComponents": {
+				  "van-dropdown-menu": "/wxcomponents/vant-weapp/dropdown-menu/index",
+				  "van-dropdown-item": "/wxcomponents/vant-weapp/dropdown-item/index",
+				  "van-divider": "/wxcomponents/vant-weapp/divider/index"
+				}
+			}
+		},{
+			"path": "pages/login/login", 
+			"style": {
+				"navigationBarBackgroundColor":"#000000",
+				"navigationBarTextStyle":"white"
+			} 
+		},{
+			"path":"pages/login/teacheLogin",
+			"style":{}  
+		},{
+            "path" : "pages/article/article",
+            "style" : {
+				"usingComponents": {
+				   "van-divider": "/wxcomponents/vant-weapp/divider/index",
+				    "van-tag": "/wxcomponents/vant-weapp/tag/index",
+					"van-icon": "/wxcomponents/vant-weapp/icon/index"
+				}
+			}
+        },{
+            "path" : "pages/service/service",  
+            "style" : {
+				"usingComponents": {
+				  "van-divider": "/wxcomponents/vant-weapp/divider/index",
+				  "van-notice-bar": "/wxcomponents/vant-weapp/notice-bar/index"
+				}
+			}   
+        },{
+            "path" : "pages/person/person", 
+            "style" : {
+				"usingComponents": {
+				   "van-cell": "/wxcomponents/vant-weapp/cell/index",
+				   "van-cell-group": "/wxcomponents/vant-weapp/cell-group/index",
+				   "van-divider": "/wxcomponents/vant-weapp/divider/index",
+				   "van-button": "/wxcomponents/vant-weapp/button/index"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/studentGrade/studentGrade",
+            "style" : {
+				"usingComponents": {
+				 "van-dropdown-menu": "/wxcomponents/vant-weapp/dropdown-menu/index",
+				 "van-dropdown-item": "/wxcomponents/vant-weapp/dropdown-item/index",
+			     "van-collapse": "/wxcomponents/vant-weapp/collapse/index",
+			     "van-collapse-item": "/wxcomponents/vant-weapp/collapse-item/index"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/version/version",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/sport/sport",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/aolan/aolan",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/classGrade/classGrade",
+            "style" : {
+            	"usingComponents": {
+            	 "van-dropdown-menu": "/wxcomponents/vant-weapp/dropdown-menu/index",
+            	 "van-dropdown-item": "/wxcomponents/vant-weapp/dropdown-item/index",
+                 "van-collapse": "/wxcomponents/vant-weapp/collapse/index",
+                 "van-collapse-item": "/wxcomponents/vant-weapp/collapse-item/index",
+				 "van-action-sheet": "/wxcomponents/vant-weapp/action-sheet/index"
+            	}
+            }
+        }
+        ,{
+            "path" : "pages/classRoom/classRoom",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/chooseCourse/chooseCourse",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/library/library",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/car/car",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/yizhanshi/yizhanshi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/fee/fee",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/articleContent/articleContent",
+            "style" : {
+				"usingComponents": {
+                    "van-field": "/wxcomponents/vant-weapp/field/index",
+					"van-button": "/wxcomponents/vant-weapp/button/index"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/writeArticle/writeArticle",
+            "style" : {
+			   "usingComponents": {
+				   "van-field": "/wxcomponents/vant-weapp/field/index",
+				   "van-picker": "/wxcomponents/vant-weapp/picker/index",
+				   "van-divider": "/wxcomponents/vant-weapp/divider/index",
+				   "van-uploader": "/wxcomponents/vant-weapp/uploader/index"
+			   }
+			}
+        }
+        ,{
+            "path" : "pages/verifyArticle/verifyArticle",
+            "style" : {
+				"usingComponents": {
+				   "van-field": "/wxcomponents/vant-weapp/field/index",
+				   "van-divider": "/wxcomponents/vant-weapp/divider/index"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/map/map",
+            "style" : {}
+        }
+    ],
+    "globalStyle": {
+    	"navigationBarTitleText": "OnePanda",   
+    	"navigationBarTextStyle": "black",
+    	"enablePullDownRefresh":false
+    },
+	"tabBar":{
+        "color": "#000000", 
+		"selectedColor":"#EE3B3B",
+		"backgroundColor": "#FFFAFA",    
+		"borderStyle": "white", 
+		"list":[{ 
+			 "pagePath": "pages/course/course",  
+			 "text": "课表",
+			 "iconPath": "/static/img/icon/course.png",
+			 "selectedIconPath":"/static/img/icon/course.png"
+		},  
+		{
+			"pagePath":"pages/article/article",    
+			"text":"校墙",
+			"iconPath":"/static/img/icon/love.png" ,
+			"selectedIconPath":"/static/img/icon/love.png"
+		},{ 
+			"pagePath": "pages/service/service", 
+			"text": "服务",
+			"iconPath": "/static/img/icon/service.png",
+			"selectedIconPath":"/static/img/icon/service.png"
+		},{
+			 "pagePath": "pages/person/person",
+			 "text": "个人",
+			 "iconPath": "/static/img/icon/person.png",
+			 "selectedIconPath":"/static/img/icon/person.png"
+		 }] 
+	}
+}

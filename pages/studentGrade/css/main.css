@@ -1,0 +1,23 @@
+.content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+    font-size: 28upx;
+}
+
+.header{
+	background-color: #0000FF;
+}
+
+.main{
+	width: 100%;
+}
+.main-header{
+    height: 100upx;
+	font-size: 30upx;
+	display: flex;
+    margin: 15upx;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}

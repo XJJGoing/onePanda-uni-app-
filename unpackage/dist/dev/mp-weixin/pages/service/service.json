@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-divider": "/wxcomponents/vant-weapp/divider/index",
+    "van-notice-bar": "/wxcomponents/vant-weapp/notice-bar/index",
+    "bw-swiper": "/components/bw-swiper/bw-swiper"
+  }
+}

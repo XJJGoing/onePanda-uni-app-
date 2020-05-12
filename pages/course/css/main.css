@@ -1,0 +1,112 @@
+/*定义全局使用的字体大小颜色等共同样式*/
+.content{
+	font-size: 28upx;
+	color: #000000;
+}
+
+.title{
+	width: 100%;
+	height: 100upx;
+}
+
+.main-center{
+	display: flex;
+	flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* 头部日期排列方式 */
+.main-header{
+	height: 100upx;
+	width: 100%;
+	background-color: #EEEEEE;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-header-month{
+	width: 70upx!important;
+	margin-left: 0upx !important;
+}
+
+/* 头部日期的每个view */
+.main-header view{
+	margin-left: 2upx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 90upx;
+	border-radius: 4%;
+	border: 1upx dotted snow;
+}
+
+.main-center-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+	font-size: 24upx;
+}
+
+/* 行里的7个view */
+.main-center-content view{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+/*7个view里面的每个view,当为空信息时用来撑开空格*/
+.main-center-content view view{
+	display: flex;
+	flex-direction: column;
+	height: 228upx;
+	width: 90upx !important;
+	margin-left: 2upx;
+	margin-top: 2upx;
+	border-radius: 4%;
+	border: 1upx dotted snow;
+	overflow: hidden;
+	color: #FFF5EE;
+	text-align: left;
+	font-size: 21upx;
+	padding: 2upx;
+}
+
+
+
+
+.main-center-content view view view {
+  
+}
+
+/* 底部备注信息 */
+.main-center-course-note{
+	width: 100% ;
+	height: 115upx ;
+	margin-top: 115upx;
+}
+.main-center-course-note textarea{
+	text-align: center;
+}
+
+/* 老师的提示信息 */
+.main-teacher-info{
+	height: 400upx;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+
+
+
+

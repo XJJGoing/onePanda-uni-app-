@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "topbar": "/components/robin-editor/header"
+  },
+  "component": true
+}

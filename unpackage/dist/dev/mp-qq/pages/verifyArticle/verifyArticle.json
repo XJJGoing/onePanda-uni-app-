@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-field": "/wxcomponents/vant-weapp/field/index",
+    "van-divider": "/wxcomponents/vant-weapp/divider/index",
+    "component-article-list": "/pages/article/articleList"
+  }
+}

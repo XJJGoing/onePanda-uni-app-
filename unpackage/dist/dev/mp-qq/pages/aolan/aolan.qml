@@ -1,0 +1,1 @@
+<scroll-view class="aolan"><view class="content"><view class="header"></view><view class="main"></view><view class="footer"></view></view></scroll-view>

@@ -1,0 +1,146 @@
+
+.content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* font-size: 24upx; */
+}
+.header{
+	display: flex;
+	flex-direction: column;
+}
+.header view{
+	margin-top: 10upx;
+}
+.header-title{
+	height: 70upx;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+}
+.header-info{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+    font-size: 24upx;
+	color: #C0C0C0;
+}
+.main{
+	width: 100%%;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	/* background-color: #1CBBB4; */
+	margin-top: 10upx;
+}
+
+.main-article{
+	width: 95%;
+	text-align: center;
+	border:1upx solid #AAAAAA;
+	border-radius: 10upx;
+}
+
+.main-comment{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10upx;
+    font-size: 28upx;
+}
+
+.main-comment view{
+	margin-top: 10upx;
+}
+
+.main-comment-addComment{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 align-items: center;
+	 font-size: 28upx;
+}
+.main-comment-addComment textarea{
+	border: 1upx solid #B2B2B2;
+	width: 600upx;
+	border-radius: 10upx; 
+}
+
+.addComment-btn{
+	height: 50upx;
+	line-height:50upx;
+	border:1upx solid #39B54A;
+	border-radius: 20upx;
+}
+.addComment-btn text{
+	font-size: 28upx;
+	font-weight: 600;
+}
+
+/*评论列表*/
+.comment-list-view{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #EDEDED;
+	border-radius: 10upx;
+}
+
+.comment-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 5upx;
+}
+.comment-info text{
+	margin-left: 5upx;
+}
+
+.comment-info img{
+	width: 50upx;
+	height: 50upx;
+	border-radius: 50%;
+}
+
+
+/*评论的回复列表*/
+.answer-list-view{
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	margin-left: 20upx;
+	/* background-color:#; */
+}
+
+.answer-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.answer-info text{
+	margin-left: 5upx;
+}
+.answer-info img{
+	width: 50upx;
+	height: 50upx;
+	border-radius: 50%;
+}
+
+
+/*审核文章按钮*/
+.main-verify{
+	margin-top: 20upx;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+    align-items: center;
+}
+.main-verify button{
+	width: 150upx;
+    height: 50upx;
+}

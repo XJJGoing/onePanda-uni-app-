@@ -1,0 +1,24 @@
+.content{
+   font-size: 28upx;
+}
+
+.header-article-kind{
+   height: 200upx;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   margin-left: 30upx;
+}
+
+.header-layout{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.main{
+	margin-top: 20upx;
+}
+

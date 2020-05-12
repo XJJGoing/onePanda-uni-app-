@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-dropdown-menu": "/wxcomponents/vant-weapp/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/vant-weapp/dropdown-item/index",
+    "van-divider": "/wxcomponents/vant-weapp/divider/index",
+    "m-left": "/pages/course/left"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-cell": "/wxcomponents/vant-weapp/cell/index",
+    "van-cell-group": "/wxcomponents/vant-weapp/cell-group/index",
+    "van-divider": "/wxcomponents/vant-weapp/divider/index",
+    "van-button": "/wxcomponents/vant-weapp/button/index"
+  }
+}

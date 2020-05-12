@@ -1,0 +1,10 @@
+.content{
+	display: flex;
+	flex-direction: column;
+	font-size: 24upx;
+	width: 100%;
+}
+
+.header{
+	
+}

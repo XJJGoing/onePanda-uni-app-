@@ -1,0 +1,35 @@
+.content{
+   font-size: 28rpx;
+}
+.header-article-kind{
+   height: 200rpx;
+   width: 100%;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -webkit-flex-direction: column;
+           flex-direction: column;
+   margin-left: 30rpx;
+}
+.header-layout{
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.main{
+	margin-top: 20rpx;
+}
+

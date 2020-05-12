@@ -1,0 +1,50 @@
+.content{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   font-size:  24upx;
+   margin-top: 10upx;
+}
+
+.header{
+	height: 200upx;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 30upx;
+}
+.header image{
+	border-radius: 50%;
+	width: 150upx;
+	height: 150upx;
+}
+
+.main{
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.main view{
+	width: 98%;
+	border-radius: 10upx;
+	margin-top: 8upx;
+}
+
+.main-logout{
+	width: 100%!important;
+	height: 100upx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20upx;
+	align-items: center;
+	margin-top: 10upx;
+}
+.main-logout button{
+  width: 600upx;
+  height: 70upx;
+}

@@ -1,0 +1,118 @@
+.content.data-v-6196cab0{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;	
+  -webkit-box-orient: vertical;	
+  -webkit-box-direction: normal;	
+  -webkit-flex-direction: column;	
+          flex-direction: column;
+  -webkit-justify-content:space-around;
+          justify-content:space-around;
+  width: 100%;
+  font-size: 24rpx;
+}
+.header.data-v-6196cab0{
+	width: 100%; 
+	height: 220rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.header-item.data-v-6196cab0{
+	width: 96%;
+	border-radius: 10rpx;
+	height: 200rpx;
+	background-color:#F2F2F2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.header-item-function.data-v-6196cab0{
+	width: 140rpx;
+	height: 100rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	color:#0000ff;
+	font-weight: 600;
+}
+.header-item-function image.data-v-6196cab0{
+	width: 60rpx;
+	height: 60rpx;
+}
+.main.data-v-6196cab0{
+}
+
+/* 娱乐位 */
+.main-content-Advertisement.data-v-6196cab0{
+  	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+/* 图片窗口栏 */
+.main-content-Advertisement-img.data-v-6196cab0{
+	width: 80%;
+}
+
+/* 视频窗口栏 */
+.main-content-Advertisement-video.data-v-6196cab0{
+	width: 95%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.main-content-Advertisement-video video.data-v-6196cab0{
+	margin-top: 20rpx;
+	width: 95%;
+	border-radius: 10rpx;
+	margin-bottom: 10rpx;
+}
+.main-content-Advertisement-video text.data-v-6196cab0{
+	font-size: 30rpx;
+	margin-top: 10rpx;
+}
+
