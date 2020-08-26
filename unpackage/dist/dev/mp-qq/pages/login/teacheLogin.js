@@ -244,7 +244,7 @@ var _Utils = __webpack_require__(/*! @/static/js/Utils.js */ 13); //
 //
 //
 //
-var _this;var wInput = function wInput() {return __webpack_require__.e(/*! import() | components/watch-login/watch-input */ "components/watch-login/watch-input").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-input.vue */ 181));};var wButton = function wButton() {return __webpack_require__.e(/*! import() | components/watch-login/watch-button */ "components/watch-login/watch-button").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-button.vue */ 188));}; //User工具类
+var _this;var wInput = function wInput() {return __webpack_require__.e(/*! import() | components/watch-login/watch-input */ "components/watch-login/watch-input").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-input.vue */ 189));};var wButton = function wButton() {return __webpack_require__.e(/*! import() | components/watch-login/watch-button */ "components/watch-login/watch-button").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-button.vue */ 196));}; //User工具类
 var app = getApp();var _default = { data: function data() {return { logoImage: 'https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/logo/logo.png', username: '', //教师名
       password: '', //密码
       isRotate: false, //是否加载旋转

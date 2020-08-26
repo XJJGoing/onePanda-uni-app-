@@ -174,7 +174,7 @@ var _API = __webpack_require__(/*! @/static/js/API.js */ 12); //
 //
 //
 //
-var _this;var componentArticleList = function componentArticleList() {return __webpack_require__.e(/*! import() | pages/article/articleList */ "pages/article/articleList").then(__webpack_require__.bind(null, /*! ./articleList.vue */ 195));};var _default = { data: function data() {return { articleList: [], //文章列表
+var _this;var componentArticleList = function componentArticleList() {return __webpack_require__.e(/*! import() | pages/article/articleList */ "pages/article/articleList").then(__webpack_require__.bind(null, /*! ./articleList.vue */ 203));};var _default = { data: function data() {return { articleList: [], //文章列表
       pageNum: 1, //页数,默认只为1,去增加pageNum
       pageSize: 3, //默认每页显示的个数
       screenHeight: '', //屏幕的高度

@@ -386,7 +386,7 @@ var _API = __webpack_require__(/*! @/static/js/API.js */ 12);var _methods;functi
 //
 //
 //
-var _this;var bwSwiper = function bwSwiper() {return __webpack_require__.e(/*! import() | components/bw-swiper/bw-swiper */ "components/bw-swiper/bw-swiper").then(__webpack_require__.bind(null, /*! @/components/bw-swiper/bw-swiper.vue */ 202));};var _default = { data: function data() {return { user: {}, swiperListImgs: [{}], //写真图片,这里必须写对象[{}]格式，不然QQ小程序中会报错
+var _this;var bwSwiper = function bwSwiper() {return __webpack_require__.e(/*! import() | components/bw-swiper/bw-swiper */ "components/bw-swiper/bw-swiper").then(__webpack_require__.bind(null, /*! @/components/bw-swiper/bw-swiper.vue */ 210));};var _default = { data: function data() {return { user: {}, swiperListImgs: [{}], //写真图片,这里必须写对象[{}]格式，不然QQ小程序中会报错
       videoList: [], fullScreen: false, //图片全屏
       swiperType: true, //卡塔栏式轮播
       textTip: true, //显示图片文字说明

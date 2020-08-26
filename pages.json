@@ -145,7 +145,8 @@
     ],
     "globalStyle": {
     	"navigationBarTitleText": "OnePanda",   
-    	"navigationBarTextStyle": "black",
+    	"navigationBarTextStyle": "black", 
+		"navigationBarBackgroundColor":"white",
     	"enablePullDownRefresh":false
     },
 	"tabBar":{
@@ -160,7 +161,7 @@
 			 "selectedIconPath":"/static/img/icon/course.png"
 		},  
 		{
-			"pagePath":"pages/article/article",    
+			"pagePath":"pages/article/article",     
 			"text":"校墙",
 			"iconPath":"/static/img/icon/love.png" ,
 			"selectedIconPath":"/static/img/icon/love.png"

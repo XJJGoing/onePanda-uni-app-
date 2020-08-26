@@ -734,7 +734,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -7186,8 +7186,8 @@ if ( true && typeof module.exports === "object") {
                 * @author 林永健
                 *
                 */
-var host = "https://onepanda.justyunmeng.com";
-// const host = "http://localhost:8080"
+// const host = "https://onepanda.justyunmeng.com"
+var host = "http://localhost:8080";
 var userLogin = "".concat(host, "/user/login");
 var queryCourse = "".concat(host, "/course/queryCourse");
 var feedbackInsert = "".concat(host, "/feedback/insert");
@@ -12969,7 +12969,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -12990,14 +12990,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -13073,7 +13073,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -13450,7 +13450,7 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 221:
+/***/ 229:
 /*!**********************************************************************************!*\
   !*** E:/语言极其数据库/uni-app/projects/one-panda/components/u-parse/libs/html2json.js ***!
   \**********************************************************************************/
@@ -13472,8 +13472,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _wxDiscode = _interopRequireDefault(__webpack_require__(/*! ./wxDiscode */ 222));
-var _htmlparser = _interopRequireDefault(__webpack_require__(/*! ./htmlparser */ 223));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _wxDiscode = _interopRequireDefault(__webpack_require__(/*! ./wxDiscode */ 230));
+var _htmlparser = _interopRequireDefault(__webpack_require__(/*! ./htmlparser */ 231));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                                  * html2Json 改造来自: https://github.com/Jxck/html2json
                                                                                                                                                                  *
                                                                                                                                                                  *
@@ -13722,7 +13722,7 @@ html2json;exports.default = _default;
 
 /***/ }),
 
-/***/ 222:
+/***/ 230:
 /*!**********************************************************************************!*\
   !*** E:/语言极其数据库/uni-app/projects/one-panda/components/u-parse/libs/wxDiscode.js ***!
   \**********************************************************************************/
@@ -13927,7 +13927,7 @@ function urlToHttpUrl(url, domain) {
 
 /***/ }),
 
-/***/ 223:
+/***/ 231:
 /*!***********************************************************************************!*\
   !*** E:/语言极其数据库/uni-app/projects/one-panda/components/u-parse/libs/htmlparser.js ***!
   \***********************************************************************************/
@@ -15043,7 +15043,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/course/course": {}, "pages/login/login": { "navigationBarBackgroundColor": "#000000", "navigationBarTextStyle": "white" }, "pages/login/teacheLogin": {}, "pages/article/article": {}, "pages/service/service": {}, "pages/person/person": {}, "pages/studentGrade/studentGrade": {}, "pages/feedback/feedback": {}, "pages/version/version": {}, "pages/sport/sport": {}, "pages/aolan/aolan": {}, "pages/classGrade/classGrade": {}, "pages/classRoom/classRoom": {}, "pages/chooseCourse/chooseCourse": {}, "pages/library/library": {}, "pages/car/car": {}, "pages/yizhanshi/yizhanshi": {}, "pages/fee/fee": {}, "pages/articleContent/articleContent": {}, "pages/writeArticle/writeArticle": {}, "pages/verifyArticle/verifyArticle": {} }, "globalStyle": { "navigationBarTitleText": "OnePanda", "navigationBarTextStyle": "black", "enablePullDownRefresh": false } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/course/course": {}, "pages/login/login": { "navigationBarBackgroundColor": "#000000", "navigationBarTextStyle": "white" }, "pages/login/teacheLogin": {}, "pages/article/article": {}, "pages/service/service": {}, "pages/person/person": {}, "pages/studentGrade/studentGrade": {}, "pages/feedback/feedback": {}, "pages/version/version": {}, "pages/sport/sport": {}, "pages/aolan/aolan": {}, "pages/classGrade/classGrade": {}, "pages/classRoom/classRoom": {}, "pages/chooseCourse/chooseCourse": {}, "pages/library/library": {}, "pages/car/car": {}, "pages/yizhanshi/yizhanshi": {}, "pages/fee/fee": {}, "pages/articleContent/articleContent": {}, "pages/writeArticle/writeArticle": {}, "pages/verifyArticle/verifyArticle": {}, "pages/map/map": {} }, "globalStyle": { "navigationBarTitleText": "OnePanda", "navigationBarTextStyle": "black", "enablePullDownRefresh": false } };exports.default = _default;
 
 /***/ }),
 

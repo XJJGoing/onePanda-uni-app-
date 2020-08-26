@@ -503,7 +503,7 @@ var _API = __webpack_require__(/*! @/static/js/API.js */ 12);function _objectSpr
 //
 //
 //
-var app = getApp();var _this;var mLeft = function mLeft() {return __webpack_require__.e(/*! import() | pages/course/left */ "pages/course/left").then(__webpack_require__.bind(null, /*! ./left.vue */ 174));};var _default = { data: function data() {return { user: {}, course: [], //api获取的原课表数组
+var app = getApp();var _this;var mLeft = function mLeft() {return __webpack_require__.e(/*! import() | pages/course/left */ "pages/course/left").then(__webpack_require__.bind(null, /*! ./left.vue */ 182));};var _default = { data: function data() {return { user: {}, course: [], //api获取的原课表数组
       recordNowWeek: 0, //,api获取的真实的周数
       nowWeek: -1, //用户可切换的周次
       nowTerm: '', paraseZcCourse: [], //解析了周次的课表数组

@@ -13,7 +13,7 @@
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
 var _map = _interopRequireDefault(__webpack_require__(/*! ./pages/map/map.vue */ 175));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_map.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-qq/dist/index.js */ 1)["createPage"]))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
 
 /***/ }),
 
@@ -182,7 +182,7 @@ var _this;var _default =
         } });
 
     } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-qq/dist/index.js */ 1)["default"]))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
@@ -214,4 +214,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 },[[174,"common/runtime","common/vendor"]]]);
-//# sourceMappingURL=../../../.sourcemap/mp-qq/pages/map/map.js.map
+//# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/map/map.js.map

@@ -122,7 +122,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uFeedback = function uFeedback() {return Promise.all(/*! import() | pages/feedback/uni-feedback */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/feedback/uni-feedback")]).then(__webpack_require__.bind(null, /*! ./uni-feedback.vue */ 209));};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uFeedback = function uFeedback() {return Promise.all(/*! import() | pages/feedback/uni-feedback */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/feedback/uni-feedback")]).then(__webpack_require__.bind(null, /*! ./uni-feedback.vue */ 217));};var _default =
 
 
 

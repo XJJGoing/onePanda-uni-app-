@@ -7258,8 +7258,8 @@ if ( true && typeof module.exports === "object") {
                 * @author 林永健
                 *
                 */
-// const host = "https://onepanda.justyunmeng.com"
-var host = "http://localhost:8080";
+var host = "https://onepanda.justyunmeng.com";
+// const host = "http://localhost:8080"
 var userLogin = "".concat(host, "/user/login");
 var queryCourse = "".concat(host, "/course/queryCourse");
 var feedbackInsert = "".concat(host, "/feedback/insert");
@@ -13522,7 +13522,7 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 221:
+/***/ 229:
 /*!**********************************************************************************!*\
   !*** E:/语言极其数据库/uni-app/projects/one-panda/components/u-parse/libs/html2json.js ***!
   \**********************************************************************************/
@@ -13544,8 +13544,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _wxDiscode = _interopRequireDefault(__webpack_require__(/*! ./wxDiscode */ 222));
-var _htmlparser = _interopRequireDefault(__webpack_require__(/*! ./htmlparser */ 223));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _wxDiscode = _interopRequireDefault(__webpack_require__(/*! ./wxDiscode */ 230));
+var _htmlparser = _interopRequireDefault(__webpack_require__(/*! ./htmlparser */ 231));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                                  * html2Json 改造来自: https://github.com/Jxck/html2json
                                                                                                                                                                  *
                                                                                                                                                                  *
@@ -13794,7 +13794,7 @@ html2json;exports.default = _default;
 
 /***/ }),
 
-/***/ 222:
+/***/ 230:
 /*!**********************************************************************************!*\
   !*** E:/语言极其数据库/uni-app/projects/one-panda/components/u-parse/libs/wxDiscode.js ***!
   \**********************************************************************************/
@@ -13999,7 +13999,7 @@ function urlToHttpUrl(url, domain) {
 
 /***/ }),
 
-/***/ 223:
+/***/ 231:
 /*!***********************************************************************************!*\
   !*** E:/语言极其数据库/uni-app/projects/one-panda/components/u-parse/libs/htmlparser.js ***!
   \***********************************************************************************/
@@ -15115,7 +15115,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/course/course": { "usingComponents": { "m-left": "/pages/course/left" } }, "pages/login/login": { "navigationBarBackgroundColor": "#000000", "navigationBarTextStyle": "white", "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/login/teacheLogin": { "usingComponents": { "w-input": "/components/watch-login/watch-input", "w-button": "/components/watch-login/watch-button" } }, "pages/article/article": { "usingComponents": { "component-article-list": "/pages/article/articleList" } }, "pages/service/service": { "usingComponents": { "bw-swiper": "/components/bw-swiper/bw-swiper" } }, "pages/person/person": { "usingComponents": {} }, "pages/studentGrade/studentGrade": { "usingComponents": {} }, "pages/feedback/feedback": { "usingComponents": { "u-feedback": "/pages/feedback/uni-feedback" } }, "pages/version/version": { "usingComponents": {} }, "pages/sport/sport": { "usingComponents": {} }, "pages/aolan/aolan": { "usingComponents": {} }, "pages/classGrade/classGrade": { "usingComponents": {} }, "pages/classRoom/classRoom": { "usingComponents": {} }, "pages/chooseCourse/chooseCourse": { "usingComponents": {} }, "pages/library/library": { "usingComponents": {} }, "pages/car/car": { "usingComponents": {} }, "pages/yizhanshi/yizhanshi": { "usingComponents": {} }, "pages/fee/fee": { "usingComponents": {} }, "pages/articleContent/articleContent": { "usingComponents": { "u-parse": "/components/u-parse/u-parse" } }, "pages/writeArticle/writeArticle": { "usingComponents": { "myeditor": "/components/robin-editor/editor" } }, "pages/verifyArticle/verifyArticle": { "usingComponents": { "component-article-list": "/pages/article/articleList" } }, "pages/map/map": {} }, "globalStyle": { "navigationBarTitleText": "OnePanda", "navigationBarTextStyle": "black", "enablePullDownRefresh": false } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/course/course": {}, "pages/login/login": { "navigationBarBackgroundColor": "#000000", "navigationBarTextStyle": "white" }, "pages/login/teacheLogin": {}, "pages/article/article": {}, "pages/service/service": {}, "pages/person/person": {}, "pages/studentGrade/studentGrade": {}, "pages/feedback/feedback": {}, "pages/version/version": {}, "pages/sport/sport": {}, "pages/aolan/aolan": {}, "pages/classGrade/classGrade": {}, "pages/classRoom/classRoom": {}, "pages/chooseCourse/chooseCourse": {}, "pages/library/library": {}, "pages/car/car": {}, "pages/yizhanshi/yizhanshi": {}, "pages/fee/fee": {}, "pages/articleContent/articleContent": {}, "pages/writeArticle/writeArticle": {}, "pages/verifyArticle/verifyArticle": {}, "pages/map/map": {} }, "globalStyle": { "navigationBarTitleText": "OnePanda", "navigationBarTextStyle": "black", "navigationBarBackgroundColor": "white", "enablePullDownRefresh": false } };exports.default = _default;
 
 /***/ }),
 

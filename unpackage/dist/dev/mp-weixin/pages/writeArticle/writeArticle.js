@@ -276,7 +276,7 @@ var _API = __webpack_require__(/*! @/static/js/API.js */ 12); //
 //
 //
 //
-var _this;var myeditor = function myeditor() {return __webpack_require__.e(/*! import() | components/robin-editor/editor */ "components/robin-editor/editor").then(__webpack_require__.bind(null, /*! @/components/robin-editor/editor.vue */ 224));};var _default = { data: function data() {return { user: '', //作者的
+var _this;var myeditor = function myeditor() {return __webpack_require__.e(/*! import() | components/robin-editor/editor */ "components/robin-editor/editor").then(__webpack_require__.bind(null, /*! @/components/robin-editor/editor.vue */ 232));};var _default = { data: function data() {return { user: '', //作者的
       author: '', //文章的作者
       title: '', //文章的标题
       articleAbstract: '', //文章的摘要

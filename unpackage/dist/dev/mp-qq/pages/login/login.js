@@ -246,13 +246,14 @@ var _Utils = __webpack_require__(/*! @/static/js/Utils.js */ 13); //
 //
 //
 //
-var _this;var wInput = function wInput() {return __webpack_require__.e(/*! import() | components/watch-login/watch-input */ "components/watch-login/watch-input").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-input.vue */ 181));};var wButton = function wButton() {return __webpack_require__.e(/*! import() | components/watch-login/watch-button */ "components/watch-login/watch-button").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-button.vue */ 188));};var app = getApp();var _default = { data: function data() {return { //logo图片
+var _this;var wInput = function wInput() {return __webpack_require__.e(/*! import() | components/watch-login/watch-input */ "components/watch-login/watch-input").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-input.vue */ 189));};var wButton = function wButton() {return __webpack_require__.e(/*! import() | components/watch-login/watch-button */ "components/watch-login/watch-button").then(__webpack_require__.bind(null, /*! @/components/watch-login/watch-button.vue */ 196));};var app = getApp();var _default = { data: function data() {return { //logo图片
       logoImage: 'https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/logo/logo.png', username: '', //学号
       password: '', //密码
       isRotate: false, //是否加载旋转
-      canIUse: wx.canIUse('button.open-type.getUserInfo') };}, components: { wInput: wInput, wButton: wButton }, mounted: function mounted() {_this = this;}, methods: { startLogin: function startLogin() {//登录
+      canIUse: wx.canIUse('button.open-type.getUserInfo') };}, components: { wInput: wInput, wButton: wButton }, mounted: function mounted() {_this = this;}, methods: { startLogin: function startLogin() {_this = this; //登录
       if (this.isRotate) {//判断是否加载中，避免重复点击请求
         return false;}if (this.username.length == "") {uni.showToast({ icon: 'none', position: 'bottom', title: '学号不能为空' });return;}if (this.password.length == "") {uni.showToast({ icon: 'none', position: 'bottom', title: '密码不能为空' });return;}var code;var userInfo;_this.isRotate = true;
+
 
 
 

@@ -3,8 +3,8 @@
   * @author 林永健
   *
   */
-const host = "https://onepanda.justyunmeng.com"
-// const host = "http://localhost:8080"
+// const host = "https://onepanda.justyunmeng.com"
+const host = "http://localhost:8080"
 const userLogin = `${host}/user/login`   
 const queryCourse = `${host}/course/queryCourse`
 const feedbackInsert = `${host}/feedback/insert`

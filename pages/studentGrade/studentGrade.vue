@@ -114,13 +114,13 @@
 								console.log("查询到的成绩的格式",res)
 								uni.hideLoading()
 								if(res[1].statusCode == 200 ){
-									let gradeList = res[1].data.data 
+									let gradeList = res[1].data.data
 										_this.gradeList = gradeList
 									    console.log(gradeList)
 										_this.calculate(gradeList)     
 										.then(res1 =>{
 											if(res1 == "NaN"){
-												_this.termGradePoint = '本学期暂无成绩'
+												_this.termGradePoint = '本学期暂无成绩或未评教'
 											}else{
 											   _this.termGradePoint = res1
 											   _this.getOtherTerm(term)	
@@ -181,11 +181,13 @@
 				.then(res =>{
 				    console.log("查询到的学年的另一个学期的成绩",res[1].data.data)
 					if(res[1].statusCode == 200){
-						let list = _this.gradeList
+						let list = []
 					    for(let i = 0;i < res[1].data.data.length;i++){
 							list.push(res[1].data.data[i])
 						}
-						_this.calculate(list)
+						let calculateList = list.concat(_this.gradeList);
+						console.log("calculateList",calculateList)
+						_this.calculate(calculateList)
 						.then(res1 =>{
 							_this.yearGradePoint = res1
 						})

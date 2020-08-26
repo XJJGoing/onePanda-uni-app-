@@ -13,8 +13,8 @@
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
 var _classRoom = _interopRequireDefault(__webpack_require__(/*! ./pages/classRoom/classRoom.vue */ 113));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_classRoom.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-qq/dist/index.js */ 1)["createPage"])) 
- 
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-qq/dist/index.js */ 1)["createPage"]))
+
 /***/ }),
 
 /***/ 113:

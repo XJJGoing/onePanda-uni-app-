@@ -276,7 +276,7 @@ var _API = __webpack_require__(/*! @/static/js/API.js */ 12); //
 //
 //
 //
-var _this;var uParse = function uParse() {return Promise.all(/*! import() | components/u-parse/u-parse */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/u-parse/u-parse")]).then(__webpack_require__.bind(null, /*! @/components/u-parse/u-parse.vue */ 216));};var _default = { data: function data() {return { user: {}, article: {}, commentMessage: '', //评论的内容
+var _this;var uParse = function uParse() {return Promise.all(/*! import() | components/u-parse/u-parse */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/u-parse/u-parse")]).then(__webpack_require__.bind(null, /*! @/components/u-parse/u-parse.vue */ 224));};var _default = { data: function data() {return { user: {}, article: {}, commentMessage: '', //评论的内容
       articleId: '' //文章的id
     };}, components: { uParse: uParse }, onLoad: function onLoad(e) {var articleId = e.articleId;this.getUser();this.getArticleContent(articleId);this.articleId = articleId;}, methods: { //获取用户的信息
     getUser: function getUser() {_this = this;uni.getStorage({ key: 'user', success: function success(res) {_this.user = res.data;}, fail: function fail() {uni.reLaunch({ url: '/pages/login/login' });} });}, //获取单个文章的内容

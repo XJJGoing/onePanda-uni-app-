@@ -85,6 +85,7 @@
 		},
 		methods: {
 		    startLogin(){
+				_this = this
 				//登录
 				if(this.isRotate){
 					//判断是否加载中，避免重复点击请求

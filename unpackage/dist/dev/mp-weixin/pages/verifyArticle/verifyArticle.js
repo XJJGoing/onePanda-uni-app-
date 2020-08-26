@@ -163,7 +163,7 @@ var _API = __webpack_require__(/*! @/static/js/API.js */ 12); //
 //
 //
 //
-var _this;var componentArticleList = function componentArticleList() {return __webpack_require__.e(/*! import() | pages/article/articleList */ "pages/article/articleList").then(__webpack_require__.bind(null, /*! @/pages/article/articleList.vue */ 195));};var _default = { data: function data() {return { articleList: [] //所有未审核的文章  
+var _this;var componentArticleList = function componentArticleList() {return __webpack_require__.e(/*! import() | pages/article/articleList */ "pages/article/articleList").then(__webpack_require__.bind(null, /*! @/pages/article/articleList.vue */ 203));};var _default = { data: function data() {return { articleList: [] //所有未审核的文章  
     };}, onShow: function onShow() {this.getArticle();}, components: { componentArticleList: componentArticleList }, methods: { //获取文章
     getArticle: function getArticle() {_this = this;uni.showLoading({ title: '获取中', success: function success() {uni.request({
             url: _API.queryUnCheckArticle,

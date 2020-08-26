@@ -20,7 +20,8 @@
     "pages/fee/fee",
     "pages/articleContent/articleContent",
     "pages/writeArticle/writeArticle",
-    "pages/verifyArticle/verifyArticle"
+    "pages/verifyArticle/verifyArticle",
+    "pages/map/map"
   ],
   "subPackages": [],
   "window": {
@@ -60,5 +61,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap81.json"
 }
