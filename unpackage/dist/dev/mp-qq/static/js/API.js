@@ -2,10 +2,10 @@
   * @Description: 项目api
   * @author 林永健
   *
-  */
-const host = "https://onepanda.justyunmeng.com"
+  */  
+const host = "https://onepanda.justyunmeng.com" 
 // const host = "http://localhost:8080"
-const userLogin = `${host}/user/login`    
+const userLogin = `${host}/user/login`     
 const queryCourse = `${host}/course/queryCourse`
 const feedbackInsert = `${host}/feedback/insert`
 const queryGrade = `${host}/grade/queryGrade`

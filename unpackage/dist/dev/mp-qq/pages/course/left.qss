@@ -1,5 +1,5 @@
 
-.left-detail.data-v-1f04dd70{
+.left-detail.data-v-4403b412{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -14,7 +14,7 @@
 	        align-items: flex-start;
 	font-size: 20rpx !important;
 }
-.left-detail view.data-v-1f04dd70{
+.left-detail view.data-v-4403b412{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;

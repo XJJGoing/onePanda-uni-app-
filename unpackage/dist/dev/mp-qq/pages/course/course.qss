@@ -1,13 +1,13 @@
 /*定义全局使用的字体大小颜色等共同样式*/
-.content.data-v-1c89c11c{
+.content.data-v-b1db4d34{
 	font-size: 28rpx;
 	color: #000000;
 }
-.title.data-v-1c89c11c{
+.title.data-v-b1db4d34{
 	width: 100%;
 	height: 100rpx;
 }
-.main-center.data-v-1c89c11c{
+.main-center.data-v-b1db4d34{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -20,7 +20,7 @@
             justify-content: flex-start;
 }
 /* 头部日期排列方式 */
-.main-header.data-v-1c89c11c{
+.main-header.data-v-b1db4d34{
 	height: 100rpx;
 	width: 100%;
 	background-color: #EEEEEE;
@@ -38,12 +38,12 @@
 	-webkit-align-items: center;
 	        align-items: center;
 }
-.main-header-month.data-v-1c89c11c{
+.main-header-month.data-v-b1db4d34{
 	width: 70rpx!important;
 	margin-left: 0rpx !important;
 }
 /* 头部日期的每个view */
-.main-header view.data-v-1c89c11c{
+.main-header view.data-v-b1db4d34{
 	margin-left: 2rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -61,7 +61,7 @@
 	border-radius: 4%;
 	border: 1rpx dotted snow;
 }
-.main-center-content.data-v-1c89c11c{
+.main-center-content.data-v-b1db4d34{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -76,7 +76,7 @@
 	font-size: 24rpx;
 }
 /* 行里的7个view */
-.main-center-content view.data-v-1c89c11c{
+.main-center-content view.data-v-b1db4d34{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -91,7 +91,7 @@
 	overflow: hidden;
 }
 /*7个view里面的每个view,当为空信息时用来撑开空格*/
-.main-center-content view view.data-v-1c89c11c{
+.main-center-content view view.data-v-b1db4d34{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -111,19 +111,19 @@
 	font-size: 21rpx;
 	padding: 2rpx;
 }
-.main-center-content view view view.data-v-1c89c11c {
+.main-center-content view view view.data-v-b1db4d34 {
 }
 /* 底部备注信息 */
-.main-center-course-note.data-v-1c89c11c{
+.main-center-course-note.data-v-b1db4d34{
 	width: 100% ;
 	height: 115rpx;
 	margin-top: 115rpx;
 }
-.main-center-course-note textarea.data-v-1c89c11c{
+.main-center-course-note textarea.data-v-b1db4d34{
 	text-align: center;
 }
 /* 老师的提示信息 */
-.main-teacher-info.data-v-1c89c11c{
+.main-teacher-info.data-v-b1db4d34{
 	height: 400rpx;
 	width: 100%;
 	display: -webkit-box;

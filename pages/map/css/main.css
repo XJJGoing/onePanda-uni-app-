@@ -1,0 +1,14 @@
+.content{
+  display: flex;	
+  flex-direction: column;
+  justify-content:space-around;
+  width: 100%;
+  font-size: 24upx;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}

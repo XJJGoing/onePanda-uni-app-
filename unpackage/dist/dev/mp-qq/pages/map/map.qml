@@ -1,1 +1,1 @@
-<scroll-view class="map"><view class="content"><view class="header"></view><view class="main"></view><view class="footer"></view></view></scroll-view>
+<scroll-view class="map"><view class="content"><view class="header"></view><view class="main"><text>点击地图全屏放大</text><image src="{{mapSrc}}" data-event-opts="{{[['tap',[['showImage',['$0'],['mapSrc']]]]]}}" bindtap="__e"></image></view><view class="footer"></view></view></scroll-view>

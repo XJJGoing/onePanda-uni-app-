@@ -49,8 +49,8 @@
 					
 					<view @click="toChooseCourse()">
 						<view class="header-item-function">
-							<image  src="https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/icon/chooseCourse.png"/>
-							<text>选课</text>
+							<image  src="https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/icon/map.png"/>
+							<text>新校区</text> 
 						</view> 
 					</view>
 					
@@ -90,7 +90,7 @@
 					 
 					 <view class="main-content-Advertisement"> 
 					 
-						<van-divider contentPosition="center">校内学生写真栏（欢迎投稿QQ：1499755237）</van-divider>
+						<van-divider contentPosition="center">广告学生写真栏（欢迎投稿QQ：1499755237）</van-divider>
 							<view class="main-content-Advertisement-img">
 								<!-- <bw-img-upload style="width:100%" ></bw-img-upload> -->
 								<bw-swiper :swiperList="swiperListImgs" 
@@ -101,9 +101,21 @@
 										   :textStyleColor='textStyleColor'
 										   :indicatorActiveColor='indicatorActiveColor'
 										   :videoAuto='videoAutoplay'
+										   :display-multiple-items="displayMultipleItems"
 										   style="width: 100%;height:300upx"
+										   @clickItem="showSwiperImage()" 
+										  
 								></bw-swiper>
 						   </view>	 
+						   
+						   <view class="main-content-Advertisement-img-info">
+							   <view >
+								   <text>手机电脑维修联系方式</text>
+								   <text>姓名：陈浩</text>
+								   <text selectable="true">QQ:2317606209</text>
+								   <text selectable="true">Tel: 18015259852</text>
+							   </view>
+						   </view>
 						
 						<van-divider contentPosition="center">校内视频宣传栏（欢迎投稿QQ：1499755237）</van-divider> 
 						  <view class="main-content-Advertisement-video">
@@ -144,7 +156,7 @@
 					 
 					fullScreen:false,  //图片全屏
 					swiperType:true,   //卡塔栏式轮播
-					textTip:true,      //显示图片文字说明
+					textTip:true,      //显示图片文字说明 
 					interval:3000,     //自动切换的时间间隔
 					textStyleColor:'#0000ff',
 					indicatorActiveColor:'#00ff66', //选中指点的颜色
@@ -237,11 +249,10 @@
 				})
 			},
 			
-			//跳选课
+			//跳新校区地图
 			toChooseCourse(){
-				uni.showModal({
-					title:'提示',
-					content:'攻城狮正在努力中'
+				uni.navigateTo({
+					url:'/pages/map/map'
 				})
 			},
 			
@@ -342,6 +353,14 @@
 						icon:'loading'
 					})
 				})
+			},
+			
+			//展示图片
+			showSwiperImage(e){
+				let imageList = [e.img]
+				 uni.previewImage({
+					urls: imageList,
+				});
 			}
 			
 		}

@@ -140,7 +140,7 @@ view{
 .feedback-quick:after {
     	font-family: uniicons;
     	font-size: 40rpx;
-    	content: '\E581';
+    	content: '\e581';
     	position: absolute;
     	right: 0;
     	top: 50%;
@@ -178,13 +178,13 @@ view{
     	margin-left: 20rpx;
 }
 .feedback-star:after {
-    	content: '\E408';
+    	content: '\e408';
 }
 .feedback-star.active {
     	color: #FFB400;
 }
 .feedback-star.active:after {
-    	content: '\E438';
+    	content: '\e438';
 }
 .feedback-button{
 		width: 100%;

@@ -8,9 +8,9 @@
 		  <view class="content">	
 		  
 		    <block v-for="(item,index) in articleList" :key="index">
-		       <view class="article" :id="item.id" @click="toArticleContent(item.id)"> 
+		       <view class="article" :id="item.id"> 
 			   
-				   <view class="article-header">
+				   <view class="article-header" @click="toArticleContent(item.id)">
 					   <view class="article-header-author">
 						    <image :src="item.articleUser.qqAvatarUrl != ''?item.articleUser.qqAvatarUrl:item.articleUser.wxAvatarUrl"/>
 						    <text>作者：{{item.author}}</text>
@@ -20,17 +20,17 @@
 					   </view> 
 				   </view>
 				   
-				   <view class="article-title">
+				   <view class="article-title" @click="toArticleContent(item.id)">
 					   <text>{{item.title}}</text>
 				   </view>
 				   
 				   <view class="article-layout">
-					  <image :src="item.layout" mode="aspectFit"/>
+					  <image :src="item.layout" mode="aspectFit" @click="showImage(item.layout)"/>
 				   </view>
-				   <view class="article-abstract">
+				   <view class="article-abstract" @click="toArticleContent(item.id)">
 				   	   <text>摘要：{{item.articleAbstract}}</text>		  
 				   </view> 
-				   <view class="article-label">
+				   <view class="article-label" @click="toArticleContent(item.id)">
 					  <uni-tag type="error" circle="true" size="small" :text="item.articleKind1"></uni-tag>
 					  <uni-tag type="success" circle="true" size="small" :text="item.articleKind2"></uni-tag>
 				   </view>
@@ -69,6 +69,14 @@
 				uni.navigateTo({
 					url:`/pages/articleContent/articleContent?articleId=${articleId}`,
 				})
+			},
+			
+			//展示图片
+			showImage(e){
+				let imageList = [e]
+				uni.previewImage({
+					urls:imageList
+				})	
 			}
 		   	
 		}

@@ -24,7 +24,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.head.data-v-79c4082b {
+.head.data-v-3dc63da1 {
   width: 100%;
   height: 60rpx;
   border-bottom: 1px solid #ccc;
@@ -33,21 +33,21 @@
           justify-content: space-between;
   background-color: #fff;
 }
-.head .btn.data-v-79c4082b {
-    display: block;
-    line-height: 60rpx;
-    font-size: 30rpx;
-    text-align: right;
-    padding: 0 10rpx;
-    color: #007AFF;
+.head .btn.data-v-3dc63da1 {
+  display: block;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  text-align: right;
+  padding: 0 10rpx;
+  color: #007AFF;
 }
-.head .btn.left.data-v-79c4082b {
-      float: left;
+.head .btn.left.data-v-3dc63da1 {
+  float: left;
 }
-.head .btn.right.data-v-79c4082b {
-      float: right;
+.head .btn.right.data-v-3dc63da1 {
+  float: right;
 }
-.head .btn.grey.data-v-79c4082b {
-      color: #333333;
+.head .btn.grey.data-v-3dc63da1 {
+  color: #333333;
 }
 

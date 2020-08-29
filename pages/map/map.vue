@@ -3,6 +3,8 @@
 		<view class="content">
 			<view class="header"></view>
 			<view class="main">
+				<text>点击地图全屏放大</text>
+				<image :src="mapSrc" @click="showImage(mapSrc)"/>
 				<!-- <view class="page-section page-section-gap">
 				<map style="width: 100%; height: 800px;" 
 				     :latitude="latitude" 
@@ -29,6 +31,7 @@
 				title: 'map',
 				latitude: 32.117438,
 				longitude: 119.369739, 
+				mapSrc: 'https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/other/map.jpg',
 				covers: [{
 					latitude: 39.909,
 					longitude: 116.39742,
@@ -37,9 +40,10 @@
 					latitude: 39.90,
 					longitude: 116.39,
 					iconPath: '../../../static/location.png'
-				}]
+				}],
 			}
 		},
+		
 		methods: {
 			//获取新校区地图定位
 			getLocation(){
@@ -57,7 +61,16 @@
 					   })
 					}
 				})
-			}
+			},
+			
+			//展示地图
+		   showImage(mapSrc){
+			   let srcList = [mapSrc]
+			   uni.previewImage({
+			   	 urls:srcList,
+				 
+			   })
+		   }
 		}
 	}
 </script>

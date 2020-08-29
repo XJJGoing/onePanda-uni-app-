@@ -1,7 +1,7 @@
 {
   "usingComponents": {
+    "u-parse": "/components/u-parse/u-parse",
     "van-field": "/wxcomponents/vant-weapp/field/index",
-    "van-button": "/wxcomponents/vant-weapp/button/index",
-    "u-parse": "/components/u-parse/u-parse"
+    "van-button": "/wxcomponents/vant-weapp/button/index"
   }
 }

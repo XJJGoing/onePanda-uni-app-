@@ -36,125 +36,139 @@
 							
 							 <!-- 课表主题信息 -->
 							 <view class="main-center-content">
-							    <block v-for="(item,index) in xqArray" :key="index">
-							 	 <view> 
-							 	       <view>  
-							 			  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
-							 				  <view v-if="course.courseJc == 1 && course.courseXq == item"
-							 						  plain="true"
-							 						  :style="{'background-color':course.bg}"
-													  @click="getCourseDetail(course)"	 
-							 				  >
-							 				     <text>
-												    {{course.courseName}}
-													<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
-													{{'\n@'+course.courseRoom}}
-													</block>	
-												</text>
-							 				  </view>	 
-							 			  </block>		
-							 		   </view> 
-							 		  
-							 		  <view>  
-							 			  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
-							 				  <view plain  v-if="course.courseJc == 2 && course.courseXq == item"
-							 				         :style="{'background-color':course.bg}"
-													  @click="getCourseDetail(course)"	
-							 				  >
-							 					<text>
-							 					     {{course.courseName}}
-							 						<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
-							 						 {{'\n@'+course.courseRoom}}
-							 						</block>
-							 					</text>
-							 				  </view> 
-							 			  </block>
-							 		  </view>
-							 		  
-							 		  <view>
-							 			  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
-							 				  <view plain  v-if="course.courseJc == 3 && course.courseXq == item"
-							 				        :style="{'background-color':course.bg}"
-													style="width: 90upx;"
-													 @click="getCourseDetail(course)"	
-							 				  >
-							 					 <text>
-							 					    {{course.courseName}}
-							 					 	<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
-							 					 	 {{'\n@'+course.courseRoom}}
-							 					 	</block>
-							 					 </text>
-							 				  </view> 
-							 			  </block>
-							 		  </view>
-							 		  
-							 		  <view>
-							 			  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
-							 				  <view plain  v-if="course.courseJc == 4 && course.courseXq == item"
-							 				        :style="{'background-color':course.bg}"
-													 @click="getCourseDetail(course)"	
-							 				  >
-							 					<text>
-							 					    {{course.courseName}}
-							 						<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
-							 						 {{'\n@'+course.courseRoom}}
-							 						</block>
-							 					</text>
-							 				  </view> 
-							 			  </block>
-							 		 </view>
-							 		 
-							 		  <view>
-							 			  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
-							 				  <view plain  v-if="course.courseJc == 5 && course.courseXq == item"
-							 				        :style="{'background-color':course.bg}"
-													 @click="getCourseDetail(course)"	
-							 				  >
-							 					<text>
-							 					    {{course.courseName}}
-							 						<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
-							 						 {{'\n@'+course.courseRoom}}
-							 						</block>
-							 					</text>
-							 				  </view> 
-							 			  </block>
-							 		  </view>
-							 		  
-							 		  <view>
-							 			  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
-							 				  <view plain  v-if="course.courseJc == 6 && course.courseXq == item"
-							 				        :style="{'background-color':course.bg}"
-													 @click="getCourseDetail(course)"	
-							 				  >
-							 					<text>
-							 					    {{course.courseName}}
-							 						<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
-							 						 {{'\n@'+course.courseRoom}}
-							 						</block>
-							 					</text>
-							 				  </view> 
-							 			  </block>
-							 		  </view>
-							 		  
-							 		 <view>
-							 			  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
-							 				  <view plain  v-if="course.courseJc == 7 && course.courseXq == item"
-							 				        :style="{'background-color':course.bg}"
-													 @click="getCourseDetail(course)"	
-							 				  >
-							 					<text>
-							 					    {{course.courseName}}
-							 						<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
-							 						{{'\n@'+course.courseRoom}}
-							 						</block>
-							 					</text>
-							 				  </view> 
-							 			  </block>
-							 		 </view>
-							 			 
-							 	 </view> 
-							   </block>
+							   <block v-if="course.length != 0">
+								   <block v-for="(item,index) in xqArray" :key="index">
+									 <view> 
+										   <view>  
+											  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
+												  <view v-if="course.courseJc == 1 && course.courseXq == item"
+														  plain="true"
+														  :style="{'background-color':course.bg}"
+														  @click="getCourseDetail(course)"	 
+												  >
+													 <text>
+														{{course.courseName}}
+														<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
+														{{'\n@'+course.courseRoom}}
+														</block>	
+													</text>
+												  </view>	 
+											  </block>		
+										   </view> 
+										  
+										  <view>  
+											  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
+												  <view plain  v-if="course.courseJc == 2 && course.courseXq == item"
+														 :style="{'background-color':course.bg}"
+														  @click="getCourseDetail(course)"	
+												  >
+													<text>
+														 {{course.courseName}}
+														<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
+														 {{'\n@'+course.courseRoom}}
+														</block>
+													</text>
+												  </view> 
+											  </block>
+										  </view>
+										  
+										  <view>
+											  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
+												  <view plain  v-if="course.courseJc == 3 && course.courseXq == item"
+														:style="{'background-color':course.bg}"
+														style="width: 90upx;"
+														 @click="getCourseDetail(course)"	
+												  >
+													 <text>
+														{{course.courseName}}
+														<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
+														 {{'\n@'+course.courseRoom}}
+														</block>
+													 </text>
+												  </view> 
+											  </block>
+										  </view>
+										  
+										  <view>
+											  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
+												  <view plain  v-if="course.courseJc == 4 && course.courseXq == item"
+														:style="{'background-color':course.bg}"
+														 @click="getCourseDetail(course)"	
+												  >
+													<text>
+														{{course.courseName}}
+														<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
+														 {{'\n@'+course.courseRoom}}
+														</block>
+													</text>
+												  </view> 
+											  </block>  
+										 </view>
+										 
+										  <view>
+											  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
+												  <view plain  v-if="course.courseJc == 5 && course.courseXq == item"
+														:style="{'background-color':course.bg}"
+														 @click="getCourseDetail(course)"	
+												  >
+													<text>
+														{{course.courseName}}
+														<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
+														 {{'\n@'+course.courseRoom}}
+														</block>
+													</text>
+												  </view> 
+											  </block>
+										  </view>
+										  
+										  <view>
+											  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
+												  <view plain  v-if="course.courseJc == 6 && course.courseXq == item"
+														:style="{'background-color':course.bg}"
+														 @click="getCourseDetail(course)"	
+												  >
+													<text>
+														{{course.courseName}}
+														<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
+														 {{'\n@'+course.courseRoom}}
+														</block>
+													</text>
+												  </view> 
+											  </block>
+										  </view>
+										  
+										 <view>
+											  <block v-for="(course,index2) in removeOverlapCourse " :key="index2">
+												  <view plain  v-if="course.courseJc == 7 && course.courseXq == item"
+														:style="{'background-color':course.bg}"
+														 @click="getCourseDetail(course)"	
+												  >
+													<text>
+														{{course.courseName}}
+														<block v-if="course.courseName != '体育1' && course.courseName != '体育2' && course.courseName != '体育3' && course.courseName != '体育4' && course.courseName != '三年级体育专项' ">
+														{{'\n@'+course.courseRoom}}
+														</block>
+													</text>
+												  </view> 
+											  </block>
+										 </view>
+											 
+									 </view> 
+								   </block>
+							   </block> 
 							   
+							   <block v-else>
+								   <text>
+									   1、无本学期课表信息
+									   2、尚未评教
+									   尚未评教可复制链接到浏览器打开进行评教
+									   ps: mac使用Safari浏览器 window使用IE浏览器
+								   </text>
+									<text selectable="true">
+										http://jwgl.just.edu.cn:8080/jsxsd/
+									</text>
+							   </block>
+							 
 							   <!-- 底部备注信息 -->
 							   <view class="main-center-course-note">
 							      <textarea disabled="true">
@@ -166,9 +180,11 @@
 					  
 					  <block v-else>
 						<view class="main-teacher-info">
-							您是学业导师或者辅导员的身份,
-							无课表信息查询您专业学生成绩
-							情况可以到服务处。
+							<block v-if="user.isAssistant == 1">
+								您是学业导师或者辅导员的身份,
+								无课表信息查询您专业学生成绩
+								情况可以到服务处。
+							</block>	
 						</view>
 					  </block>
 						
@@ -312,7 +328,7 @@
 			   	let course =  _this.course
 				let nowWeek = _this.nowWeek
 				let afterDetailCourse = []
-				
+			 
 				//对周进行分割,并生成每个单周的zcString字符串 类似于 1,2,4,5,6
 				for(let i = 0 ; i < course.length ; i++){
 				    let zcString = '';        //周次的string

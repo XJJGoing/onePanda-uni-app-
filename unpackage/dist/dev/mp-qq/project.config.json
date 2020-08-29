@@ -1,34 +1,58 @@
 {
-  "description": "项目配置文件。",
-  "packOptions": {
-    "ignore": []
-  },
-  "setting": {
-    "urlCheck": false,
-    "minified": true,
-    "postcss": true,
-    "es6": true
-  },
-  "compileType": "miniprogram",
-  "projectname": "OnePanda",
-  "condition": {
-    "search": {
-      "current": -1,
-      "list": []
-    },
-    "conversation": {
-      "current": -1,
-      "list": []
-    },
-    "game": {
-      "current": -1,
-      "list": []
-    },
-    "miniprogram": {
-      "current": -1,
-      "list": []
-    }
-  },
-  "qqappid": "1110191312",
-  "qqLibVersion": "1.6.3"
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"minified": true,
+		"postcss": true,
+		"es6": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"projectname": "OnePanda",
+	"qqappid": "1110191312",
+	"qqLibVersion": "1.6.3",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "map",
+					"pathName": "pages/map/map",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "service",
+					"pathName": "pages/service/service",
+					"query": "",
+					"scene": ""
+				}
+			]
+		}
+	}
 }
