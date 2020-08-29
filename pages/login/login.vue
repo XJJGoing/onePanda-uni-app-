@@ -71,7 +71,7 @@
 				logoImage:'https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/logo/logo.png',
 				username:'', //学号
 				password:'', //密码
-				isRotate: false, //是否加载旋转
+				isRotate: false, //是否加载旋转 
 				   
 				canIUse: wx.canIUse('button.open-type.getUserInfo')
 			}; 
@@ -197,7 +197,6 @@
 		}
 	}
 </script>
-
 <style>
 	@import url("../../components/watch-login/css/icon.css");
 	@import url("./css/main.css");
