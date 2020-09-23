@@ -115,6 +115,9 @@
 								   <text selectable="true">QQ:2317606209</text>
 								   <text selectable="true">Tel: 18015259852</text>
 							   </view>
+							   <view>
+								   <ad unit-id="a789ea76360b5d82a21103f6a06ed809" type="card"></ad>
+							   </view> 
 						   </view>
 						
 						<van-divider contentPosition="center">校内视频宣传栏（欢迎投稿QQ：1499755237）</van-divider> 
@@ -145,6 +148,25 @@
 	var _this
 	import {advertisementImg,advertisementVideo} from '@/static/js/API.js'
 	import {bwSwiper} from '@/components/bw-swiper/bw-swiper.vue'
+	
+	// #ifdef MP-QQ
+	   // let InterstitialAd = qq.createInterstitialAd({
+	   //   adUnitId: 0e625444a884365e1ac12fbc77ecb198
+	   // });
+	   // InterstitialAd.load().catch((err) => {
+	   //   console.error('load',err)
+	   // })        
+	   // InterstitialAd.onLoad(() => {
+	   //   console.log('onLoad event emit') 
+	   // })
+	   // InterstitialAd.onClose(() => {
+	   //   console.log('close event emit')
+	   // })       
+	   // InterstitialAd.onError((e) => {
+	   //   console.log('error', e)
+	   // })
+	// #endif
+	
 	export default {
 		data() { 
 			return {
@@ -161,15 +183,19 @@
 					textStyleColor:'#0000ff',
 					indicatorActiveColor:'#00ff66', //选中指点的颜色
 					videoAutoplay:false         ,//视频是否自动播放，默认false
+					InterstitialAd:null,
 				
 				
 			      
-			}
+			} 
 		},
 		onLoad() {
 			this.getUser()
 			this.getImageList()
 			this.getVideoList()
+		},
+		onReady() { 
+		  
 		},
 		components:{
 			bwSwiper,
@@ -196,15 +222,16 @@
 			toClassGrade(){   
 				_this = this
 				console.log(_this.user)
-				let majorNumberLength = _this.user.majorNumber.length
-				if(majorNumberLength != 0 ){
+				console.log("majorNumber" ,_this.user.majorNumber)
+				let majorNumber = _this.user.majorNumber
+				if(majorNumber != '' && majorNumber != null ){
 					uni.navigateTo({
 						url:'/pages/classGrade/classGrade',
 					})
 				}else{
 					uni.showToast({
-						title:"亲!只有老师才有权限哦!",
-						duration:1000, 
+						title:"亲!开通权限请联系开发者!",
+						duration:2000, 
 						icon:"none"
 					})
 				}

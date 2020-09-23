@@ -3,8 +3,7 @@
 		<view class="content">
 			<view class="header"></view>
 			<view class="main">
-				<image src="https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/other/car1.png"  />
-				<image src="https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/other/car2.png"  />
+				<image :src="carImgUrl" @click="preViewCarImg()"/>
 			</view>
 			<view class="footer"></view>
 		</view>
@@ -15,11 +14,16 @@
 	export default {
 		data() {
 			return {
-				
+				carImgUrl:'https://one-panda-1257831346.cos.ap-shanghai.myqcloud.com/other/car1.jpg'
 			}
 		},
 		methods: {
-			
+			preViewCarImg(){
+				let imgList = [this.carImgUrl]
+				uni.previewImage({
+					urls:imgList
+				})
+			}
 		}
 	}
 </script>

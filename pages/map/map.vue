@@ -12,11 +12,11 @@
 					 :markers="covers"
 			    >
 				</map>
-				 </view> -->
+				 </view> --> 
 			</view>
 			<view class="footer"></view>
 		</view>
-	</scroll-view>
+	</scroll-view>  
 </template>
 
 <script>

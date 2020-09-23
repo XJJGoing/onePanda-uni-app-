@@ -88,8 +88,8 @@
 /* 底部备注信息 */
 .main-center-course-note{
 	width: 100% ;
-	height: 115upx ;
-	margin-top: 115upx;
+	height: 160upx ;
+	margin-top: 160upx;
 }
 .main-center-course-note textarea{
 	text-align: center;
@@ -103,7 +103,9 @@
 	flex-direction: column;
 	justify-content: center;
 }
-
+.footer{
+	
+}
 
 
 

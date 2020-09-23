@@ -82,24 +82,26 @@
             this.sendDate = Object.assign(deviceInfo, this.sendDate);
         },
         methods: {
-            close(e){
+            close(e){ 
                 this.imageList.splice(e,1);
             },
             chooseMsg() { //快速输入
+			    _this = this
                 uni.showActionSheet({
                     itemList: this.msgContents,
                     success: (res) => {
-                        this.sendDate.content = this.msgContents[res.tapIndex];
+                        _this.sendDate.content = _this.msgContents[res.tapIndex];
                     }
                 })
             },
             chooseImg() { //选择图片
+			    _this = this
                 uni.chooseImage({
                     sourceType: ["camera", "album"],
                     sizeType: "compressed",
                     count: 5 - this.imageList.length,
                     success: (res) => {
-                        this.imageList = this.imageList.concat(res.tempFilePaths);
+                        _this.imageList = _this.imageList.concat(res.tempFilePaths);
                     }
                 })
             },

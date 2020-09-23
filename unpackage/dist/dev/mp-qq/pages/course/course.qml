@@ -3,4 +3,4 @@
 								   尚未评教可复制链接到浏览器打开进行评教
 								   ps: mac使用Safari浏览器 window使用IE浏览器</text><text selectable="true" class="data-v-b1db4d34">http://jwgl.just.edu.cn:8080/jsxsd/</text></block></block><view class="main-center-course-note data-v-b1db4d34"><textarea disabled="true" class="data-v-b1db4d34">{{''+note+''}}</textarea></view></view></block></block><block qq:else><block class="data-v-b1db4d34"><view class="main-teacher-info data-v-b1db4d34"><block qq:if="{{user.isAssistant==1}}"><block class="data-v-b1db4d34">您是学业导师或者辅导员的身份,
 							无课表信息查询您专业学生成绩
-							情况可以到服务处。</block></block></view></block></block></view></view><view class="footer data-v-b1db4d34"></view></view></scroll-view>
+							情况可以到服务处。</block></block></view></block></block></view></view><view class="footer data-v-b1db4d34"><ad unit-id="a789ea76360b5d82a21103f6a06ed809" type="card" class="data-v-b1db4d34"></ad></view></view></scroll-view>

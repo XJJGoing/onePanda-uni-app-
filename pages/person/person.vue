@@ -39,7 +39,7 @@
 			  </view>
 		 </view> 
 		 <view class="footer"> 
-			   
+			   <ad unit-id="a789ea76360b5d82a21103f6a06ed809" type="card"></ad>
 		 </view>
 	  </view>	
     </scroll-view>
@@ -97,7 +97,7 @@
 				   })
 				   console.log("退出登录失败",e.message)
 				}
-			}
+			},
 		}
 	}
 </script>

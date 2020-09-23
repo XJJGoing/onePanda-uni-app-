@@ -174,7 +174,9 @@
 							      <textarea disabled="true">
 							   	     {{note}}
 							      </textarea>
-							   </view>	 	   
+							   </view>	
+									  
+									  
 						</view> 
 					  </block>
 					  
@@ -192,7 +194,9 @@
 				
 				 </view>
 				 
-				 <view class="footer"></view>
+				 <view class="footer">
+					 <ad unit-id="a789ea76360b5d82a21103f6a06ed809" type="card"></ad>
+				 </view>
 			 </view>	
 	</scroll-view>
 </template>
